@@ -2,7 +2,6 @@ name: Build Android APK
 
 on:
   workflow_dispatch:
-
   push:
     branches:
       - main
@@ -37,14 +36,16 @@ jobs:
 
       - name: Get dependencies
         run: flutter pub get
+        working-directory: zearah-raid-main
 
       - name: Build APK
         run: flutter build apk --release
+        working-directory: zearah-raid-main
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: ride-on-release-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: zearah-raid-main/build/app/outputs/flutter-apk/app-release.apk
           if-no-files-found: error
           
