@@ -58,7 +58,7 @@ class _ChangeLanguageState extends State<ChangeLanguage> {
 
                           setState(() {
                             _value = index;
-                            box.put("lanValue", _value);
+                            lanBox.put("lanValue", _value);
                           });
                         },
                         child: languageWidget(
