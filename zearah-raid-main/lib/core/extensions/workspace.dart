@@ -9,7 +9,9 @@ import '../../presentation/cubits/book_ride_cubit.dart';
 
 final List locale = [
   {'name': 'English', 'locale': "en"},
-  {'name': 'Arabic', 'locale': 'ar'}
+  {'name': 'Arabic', 'locale': 'ar'},
+  {'name': 'French (Français)', 'locale': 'fr'},
+  {'name': 'Russian (Русский)', 'locale': 'ru'},
 ];
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
